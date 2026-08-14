@@ -1,0 +1,11 @@
+{
+  "name": "hello-typescript",
+  "private": true,
+  "devDependencies": {
+    "tsx": "4.19.2",
+    "typescript": "5.7.2"
+  },
+  "scripts": {
+    "start": "tsx hello.ts"
+  }
+}

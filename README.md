@@ -1,19 +1,29 @@
-# Hello, World!
+# Hello World Learning Collection
 
-The smallest possible static “Hello, World!” in plain HTML.
+Each directory is a self-contained example: an executable source file, a `Dockerfile`, and its own English README. Every program prints `Hello, World!`; the HTML example displays it in a browser.
 
-## Quick Start
-- Open `index.html` directly in your web browser.
+| Language | Directory | Run locally |
+| --- | --- | --- |
+| Python | `python` | `python hello.py` |
+| HTML | `html` | Open `index.html` in a browser |
+| C | `c` | `gcc -o hello hello.c && ./hello` |
+| C++ | `cpp` | `g++ -o hello hello.cpp && ./hello` |
+| JavaScript | `javascript` | `node hello.js` |
+| Java | `java` | `javac HelloWorld.java && java HelloWorld` |
+| Go | `go` | `go run hello.go` |
+| PHP | `php` | `php hello.php` |
+| Rust | `rust` | `cargo run` |
+| Ruby | `ruby` | `ruby hello.rb` |
+| C# | `csharp` | `dotnet run` |
+| Kotlin | `kotlin` | `kotlinc HelloWorld.kt -include-runtime -d hello.jar && java -jar hello.jar` |
+| TypeScript | `typescript` | `npx tsx hello.ts` |
+| Bash | `bash` | `bash hello.sh` |
+| Perl | `perl` | `perl hello.pl` |
 
-## Optional: Serve Locally
-- Python: `python -m http.server 8000`
-- Node.js: `npx http-server .` or `npx serve .`
+For Docker, enter the language directory and follow that directory's README. Example:
 
-## Docker
-- Build: `docker build -t hello-world .`
-- Run: `docker run --rm -p 8080:80 hello-world`
-- Open: `http://localhost:8080`
-
-## Files
-- `index.html` — minimal page that displays “Hello, World!”.
- - `Dockerfile` — nginx container serving the page.
+```bash
+cd python
+docker build -t hello-python .
+docker run --rm hello-python
+```
